@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fulfil UI</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.fulfil.io/assets/mdb/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.fulfil.io/assets/mdb/4.3.1/css/mdb.min.css">
+</head>
+
+<body>
+
+<nav id="mainNav" class="col-md-12">
+  <h2>Fulfil UI Style Documentation</h2>
+</nav>
+
+<div class="container-fluid">
+  <section class="row">
+    <div class="col-sm-3 col-md-2 " id="sideNav">
+      <ul>
+        <li><a href="#color">Color Palette</a></li>
+        <li><a href="#typography">Typography</a></li>
+        <li><a href="#cards">Cards</a></li>
+        <li><a href="#buttons">Buttons</a></li>
+        <li><a href="#form">Forms</a></li>
+        <li><a href="#helper">Helper Classes</a></li>
+      </ul>
+    </div>
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 " id="content">
+      <section id="color">
+        <h2 class="page-header dark">Color Palette</h2>
+        <br/>
+        <div class="container-fluid">
+          <h3 class="dark"> Brand Color </h3>
+          <p>
+            Brand Color is <span class="color-blue">Warm-Blue</span> which is defined by SASS variable
+            <span class="special dull-bg">$main-color</span>and classes <span class="special dull-bg">.color-blue</span>
+            and <span class="special dull-bg">.background-blue</span>.Further there is a light and a dark variation for
+            the brand color which are defined by postfix <span class="special dull-bg">$**-dark</span> or
+            <span class="special dull-bg">$**-light</span> and helper classes
+            <span class="special dull-bg">.background-blue-dark</span>&nbsp;<span class="special dull-bg">.color-blue-dark</span>
+            <span class="special dull-bg">.background-blue-light</span>&nbsp;<span class="special dull-bg">.color-blue-light</span>
+          </p>
+          <div class="flex-box">
+            <div class="box rounded-bdr background-blue-light">
+              <h3><span class="special font-code">#dce1e9</span></h3>
+            </div>
+            <div class="box rounded-bdr background-blue">
+              <h3><span class="special font-code">#3c87f9</span></h3>
+            </div>
+            <div class="box rounded-bdr background-blue-dark">
+              <h3><span class="special font-code">#3467d5</span></h3>
+            </div>
+          </div>
+        </div>
+        <br/>
+        <div class="container-fluid">
+          <h3 class="dark"> Complimentary Colors </h3>
+          <p>
+            Complimentary Color are set of Colors which can be used where it's deemed needed
+            <br/>
+            <span class="color-green"><b>Green</b></span> is defined by SASS variable
+            <span class="special dull-bg">$green</span>and helper classes
+            <span class="special dull-bg">.color-green</span> and <span class="special dull-bg">.background-green</span>
+            <span class="color-red"><b>Red</b></span> is defined by SASS variable <span class="special dull-bg">$red</span>
+            and helper classes <span class="special dull-bg">.color-red</span> and <span class="special dull-bg">.background-red </span>
+            <br/>
+            <span class="color-yellow"><b>Yellow</b></span> is defined by SASS variable <span class="special dull-bg">$yellow</span>
+            and helper classes <span class="special dull-bg">.color-yellow</span> and <span class="special dull-bg">.background-yellow</span>
+          </p>
+          <div class="flex-box">
+            <div class="box rounded-bdr background-green">
+              <h3><span class="special font-code">#2ce285</span></h3>
+            </div>
+            <div class="box rounded-bdr background-red">
+              <h3><span class="special font-code">#e25c2c</span></h3>
+            </div>
+            <div class="box rounded-bdr background-yellow">
+              <h3><span class="special font-code">#e2b82c</span></h3>
+            </div>
+          </div>
+        </div>
+        <br/>
+        <br/>
+        <div class="container-fluid">
+          <h3 class="dark"> Background/Foreground Colors </h3>
+          <p>
+            Background/Foreground Colors are defined by SASS variables <span class="special dull-bg">$black</span>
+            &nbsp;<span class="special dull-bg">$white</span> and helper classes <span class="special dull-bg">.background-white</span>&nbsp
+            <span class="special dull-bg">.color-white</span>&nbsp
+            <span class="special dull-bg">.background-black</span>&nbsp<span class="special dull-bg">.color-black</span>.&nbsp
+            <br/> Further there are shades of both black and white which can be accessed by sass variables
+            <span class="special dull-bg">$black-light</span>&nbsp
+            <span class="special dull-bg">$black-dull</span>&nbsp<span class="special dull-bg">$white-light</span>
+            <span class="special dull-bg">$white-dull</span>&nbsp and helper Classes with Postfix of <span class="special dull-bg">.**-light</span>
+            <span class="special dull-bg">.**-dull</span>
+          </p>
+          <div class="flex-box">
+            <div class="box  background-white-light">
+              <h3><span class="special color-black font-code">#f8f8f8</span></h3>
+            </div>
+            <div class="box  background-white">
+              <h3><span class="special color-black-light font-code">#e0e0e0</span></h3>
+            </div>
+            <div class="box  background-white-dull">
+              <h3><span class="special color-black-dark font-code">#b2b2b2</span></h3>
+            </div>
+            <div class="box  background-black-dull">
+              <h3><span class="special color-white-dull font-code">#818181</span></h3>
+            </div>
+            <div class="box  background-black-light">
+              <h3><span class="special color-white font-code">#555555</span></h3>
+            </div>
+            <div class="box  background-black">
+              <h3><span class="special color-white-light font-code">#313131</span></h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr/>
+      <section>
+        <h2 id="typography" class="page-header dark">Typography</h2>
+        <br/>
+        <div class="container-fluid">
+          <h3> Headings </h3>
+          <p>
+            Headings H1-H3 are by Default formated to <span class="heading">Montserrat</span> and Sans-Serif as
+            Fallback Fonts Font Sizes and other parameters change automatically via <span class="dull-bg special">Media Queries</span>.
+            You can use<span class="heading">Montserrat</span> by using <span class="dull-bg special">.heading</span>
+            helper Class or SASS variable <span class="dull-bg special">$title-font</span>
+          </p>
+          <div class="pull-left s margin-min">
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+          </div>
+        </div>
+        <br/>
+        <div class="container-fluid">
+          <h3> Paragraph </h3>
+          <p>
+            The Paragraph, Anchor, Span and Rest are by Default formated to <b>Questrial</b> and Sans-Serif as Fallback
+            Fonts Font Sizes and other parameters change automatically via <span class="dull-bg special">Media Queries</span>.
+            You can also use<b>Montserrat</b> by using SASSvariable <span class="dull-bg special">$font</span>
+          </p>
+          <div class="pull-left ">
+            <p class="dull-bg pad-min">
+              Lorem ipsum dolor sit amet, ubique quodsi denique pri eu, error imperdiet an eum. Ei mea iuvaret
+              dissentiunt. Pro et facete pertinacia. An everti tritani pro, ne ius nulla admodum. Illum vitae nostro cu
+              sed, odio incorrupte te nec. Cum an brute electram suscipiantur, est assueverit definitionem eu, vix ut
+              audiam minimum sententiae. Dicta putant eirmod usu ei, appareat adipiscing et qui. Copiosae definiebas ne
+              eum, qui ea probo iisque suavitate. No cum omnes primis assentior, choro officiis an nec. Amet esse
+              fuisset vis ei. Eos in persius omnesque intellegebat.
+            </p>
+          </div>
+        </div>
+      </section>
+      <hr/>
+      <section>
+        <h2 id="cards" class="page-header dark">Cards</h2>
+        <br/>
+        <div class="container-fluid">
+          <p>
+            Cards can be created using class <span class="dull-bg special">.card</span> which will add pure white to
+            the card and then later card shadow can be configured using <span class="dull-bg special">.shadow-*</span>
+            shadow depth is of 5 ranges ranging from 1-5
+          </p>
+          <br/>
+          <div class="flex-box  ">
+            <div class="box card margin shadow-1">
+              <span class="special font-code">.shadow-1 .card</span>
+            </div>
+            <div class="box card margin shadow-2">
+              <span class="special font-code">.shadow-2 .card</span>
+            </div>
+            <div class="box card margin shadow-3">
+              <span class="special font-code">.shadow-3 .card</span>
+            </div>
+            <div class="box card margin shadow-4">
+              <span class="special font-code">.shadow-4 .card</span>
+            </div>
+            <div class="box card margin shadow-5">
+              <span class="special font-code">.shadow-5 .card</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr/>
+      <section>
+        <h2 id="buttons" class="page-header dark">Buttons</h2>
+        <p>Buttons are by Default styled using class <span class="dull-bg special">.btn</span>
+        </p>
+        <br/>
+        <h3>Colored</h3>
+        <div class="container-fluid">
+          <p>Buttons can be colored by using color palette defined above </p>
+          <br/>
+          <div class="flex-box  ">
+            <button class="btn background-black">.btn</button>
+            <button class="btn background-blue">.btn Blue</button>
+            <button class="btn background-red">.btn Red</button>
+            <button class="btn background-yellow ">.btn Yellow</button>
+            <button class="btn background-white-dull color-black-dull">.btn Disabled</button>
+          </div>
+          <br/>
+          <h3>Outlined</h3>
+          <div class="container-fluid">
+            <p>Buttons can be outline with respective color with <span class="dull-bg special">.btn-outline</span>
+              helper class but strictly followed color palette helper class
+              <br/><span class="dull-bg special">color-*</span> Thickness can be altered by
+              <span class="dull-bg special">.bdr-size-*</span> min or max </p>
+            <br/>
+            <div class="flex-box outline ">
+              <button class="color-blue btn bdr-size-max btn-outline">.btn-outline</button>
+              <button class="color-blue btn btn-outline ">.btn-outline Blue</button>
+              <button class="color-red btn btn-outline">.btn-outline Red</button>
+              <button class="color-yellow btn btn-outline">.btn-outline Yellow</button>
+              <button class="btn btn-outline bdr-size-min color-white-dull color-black-dull">.btn-outline Disabled
+              </button>
+            </div>
+          </div>
+          <br/>
+          <h3>Rounded</h3>
+          <div class="container-fluid">
+            <p>Buttons can be rounded with respective color and outline definations using class <span
+                    class="dull-bg special">.rounded-bdr</span> further more there are two other variations or curves
+              namely<span class="dull-bg special">rounded-bdr-min</span>
+              <span class="dull-bg special">rounded-bdr-max</span>
+            </p>
+            <br/>
+            <div class="flex-box outline ">
+              <button class="rounded-bdr-min btn">.rounded-bdr-min</button>
+              <button class="rounded-bdr btn">.rounded-bdr</button>
+              <button class="rounded-bdr-max btn">.rounded-bdr-max</button>
+              <button class="rounded-bdr-max background-blue btn">.rounded-bdr-max</button>
+              <button class="rounded-bdr-max color-blue btn-outline btn">.rounded-bdr-max</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr/>
+      <section>
+        <h2 id="form" class="page-header dark">Form Elements</h2>
+        <br/>
+        <div class="container-fluid">
+          <h3>Inputs</h3>
+          <p>Inputs can be created using the following template with the use of MDB. Placeholders can be configured
+            inside element property
+            <span class="dull-bg special">placeholder</span>. Inputs can be Pre-filled by altering property
+            <span class="dull-bg special">Value</span>. You can Disable an Input by adding
+            <span class="dull-bg special">disable</span> property to Input and
+            <span class="dull-bg special">.disable</span> class to label.
+          </p>
+          <br/>
+          <div class="md-form">
+            <input type="text" id="form1" class="form-control">
+            <label for="form1" class="">Sample Input</label>
+          </div>
+          <div class="md-form">
+            <input placeholder="Placeholder" type="text" id="form5" class="form-control">
+            <label for="form5">Sample Placeholder</label>
+          </div>
+          <div class="md-form">
+            <input value="John Doe" type="text" id="form6" class="form-control">
+            <label class="active" for="form6">Pre-filled Value</label>
+          </div>
+          <div class="md-form">
+            <input type="text" id="form11" class="form-control" disabled>
+            <label for="form11" class="disabled">Sample Disabled Input</label>
+          </div>
+          <h3>Radio Buttons</h3>
+          <p>
+            Radio Buttons can be created as follows but please note that name property of grouped elements should have
+            same Values. and Labels should point to Respective Input id's
+          </p>
+          <div class="form-group">
+            <input name="group2" type="radio" class="with-gap" id="radio4">
+            <label for="radio4">Sample Radio 1</label>
+          </div>
+          <div class="form-group">
+            <input name="group2" type="radio" class="with-gap" id="radio5">
+            <label for="radio5">Sample Radio 2</label>
+          </div>
+          <div class="form-group">
+            <input name="group2" type="radio" class="with-gap" id="radio6">
+            <label for="radio6">Sample Radio 3</label>
+          </div>
+          <h3>Text Area</h3>
+          <div class="md-form">
+            <textarea id="textarea-char-counter" class="md-textarea" length="120"></textarea>
+            <label for="textarea-char-counter">Sample Text Area</label>
+          </div>
+          <h3>Checkboxes</h3>
+          <p>
+            Checkboxes can be created as follows but please note that Labels should point to Respective Input id's
+          </p>
+          <div class="form-group">
+            <input type="checkbox" id="checkbox11" class="filled-in" checked="">
+            <label for="checkbox11">Default</label>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" id="checkbox12" class="filled-in" checked="">
+            <label for="checkbox12">Default</label>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" id="checkbox13" class="filled-in" checked="">
+            <label for="checkbox13">Default</label>
+          </div>
+          <h3>Dropdown</h3>
+          <p>
+            Dropdown's can be created like below but note that data-toggle needs to be Pointed Accordingly.
+          </p>
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Sample Dropdown
+            </button>
+            <div class="dropdown-menu dropdown-primary">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr/>
+      <section>
+        <h2 id="helper" class="page-header dark">Helper</h2>
+        <p>These helper classes are the Bi-product of the above design library these helps developers outright follow
+          theme adjustments with ease.
+        </p>
+        <br/>
+        <h3>Text</h3>
+        <div class="container-fluid">
+          <p>Use the below classes to get desired effect. They Justification, Alignment, Case-Conversion and Wraping can
+            be configured. </p>
+          <br/>
+          <div class="dull-bg margin-min pad-min text-left">
+            <h3 class="special ">.text-left </h3> Lorem ipsum dolor sit amet, ubique quodsi denique pri eu, error
+            imperdiet an eum. Ei mea iuvaret dissentiunt. Pro et facete pertinacia. An everti tritani pro
+          </div>
+          <div class="dull-bg margin-min pad-min text-right">
+            <h3 class="special">.text-right </h3> Lorem ipsum dolor sit amet, ubique quodsi denique pri eu, error
+            imperdiet an eum. Ei mea iuvaret dissentiunt. Pro et facete pertinacia. An everti tritani pro
+          </div>
+          <div class="dull-bg margin-min pad-min text-center">
+            <h3 class="special">.text-center </h3> Lorem ipsum dolor sit amet, ubique quodsi denique pri eu, error
+            imperdiet an eum. Ei mea iuvaret dissentiunt. Pro et facete pertinacia. An everti tritani pro
+          </div>
+          <div class="dull-bg margin-min pad-min text-justify">
+            <h3 class="special">.text-justify </h3> Lorem ipsum dolor sit amet, ubique quodsi denique pri eu, error
+            imperdiet an eum. Ei mea iuvaret dissentiunt. Pro et facete pertinacia. An everti tritani pro
+          </div>
+          <div class="dull-bg margin-min pad-min text-nowrap">
+            <h3 class="special">.text-nowrap </h3>
+            <p>Lorem ipsum dolor sit amet, ubique quodsi denique pri eu, error imperdiet an eum. Ei mea iuvaret
+              dissentiunt. Pro et facete pertinacia. An everti tritani pro</p>
+          </div>
+          <div class="dull-bg margin-min pad-min text-uppercase">
+            <h3 class="special">.text-uppercase </h3> Lorem ipsum dolor sit amet, ubique quodsi denique pri eu, error
+            imperdiet an eum. Ei mea iuvaret dissentiunt. Pro et facete pertinacia. An everti tritani pro
+          </div>
+          <div class="dull-bg margin-min pad-min text-lowercase">
+            <h3 class="special">.text-lowercase </h3> Lorem ipsum dolor sit amet, ubique quodsi denique pri eu, error
+            imperdiet an eum. Ei mea iuvaret dissentiunt. Pro et facete pertinacia. An everti tritani pro
+          </div>
+          <div class="dull-bg margin-min pad-min text-capitalize">
+            <h3 class="special">.text-capitalize </h3> Lorem ipsum dolor sit amet, ubique quodsi denique pri eu, error
+            imperdiet an eum. Ei mea iuvaret dissentiunt. Pro et facete pertinacia. An everti tritani pro
+          </div>
+        </div>
+        <br/>
+        <h3>Round Border</h3>
+        <div class="container-fluid">
+          <p>Use the below classes to get desired Roundness.</p>
+          <br/>
+          <div class="dull-bg margin-min pad-min rounded-bdr-min">
+            <h3 class="special">.rounded-bdr-mini </h3> Lorem ipsum dolor sit amet, ubique quodsi denique pri eu, error
+            imperdiet an eum. Ei mea iuvaret dissentiunt. Pro et facete pertinacia. An everti tritani pro
+          </div>
+          <div class="dull-bg margin-min pad-min rounded-bdr">
+            <h3 class="special ">.rounded-bdr </h3> Lorem ipsum dolor sit amet, ubique quodsi denique pri eu, error
+            imperdiet an eum. Ei mea iuvaret dissentiunt. Pro et facete pertinacia. An everti tritani pro
+          </div>
+          <div class="dull-bg margin-min pad-min rounded-bdr-max">
+            <h3 class="special">.rounded-bdr-max </h3> Lorem ipsum dolor sit amet, ubique quodsi denique pri eu, error
+            imperdiet an eum. Ei mea iuvaret dissentiunt. Pro et facete pertinacia. An everti tritani pro
+          </div>
+        </div>
+        <br/>
+        <h3>Padding</h3>
+        <div class="container-fluid">
+          <p>Use the below classes to get desired Padding.</p>
+          <br/>
+          <div class="dull-bg margin-min pad-min ">
+            <h3 class="special ">.pad-min </h3> Lorem ipsum dolor sit amet, ubique quodsi denique pri eu, error
+            imperdiet an eum. Ei mea iuvaret dissentiunt. Pro et facete pertinacia. An everti tritani pro
+          </div>
+          <div class="dull-bg margin-min pad">
+            <h3 class="special">.pad </h3> Lorem ipsum dolor sit amet, ubique quodsi denique pri eu, error imperdiet an
+            eum. Ei mea iuvaret dissentiunt. Pro et facete pertinacia. An everti tritani pro
+          </div>
+          <div class="dull-bg margin-min pad-max ">
+            <h3 class="special">.pad-max </h3> Lorem ipsum dolor sit amet, ubique quodsi denique pri eu, error imperdiet
+            an eum. Ei mea iuvaret dissentiunt. Pro et facete pertinacia. An everti tritani pro
+          </div>
+          <div class="dull-bg margin-min no-pad">
+            <h3 class="special">.no-pad </h3> Lorem ipsum dolor sit amet, ubique quodsi denique pri eu, error imperdiet
+            an eum. Ei mea iuvaret dissentiunt. Pro et facete pertinacia. An everti tritani pro
+          </div>
+        </div>
+        <br/>
+        <h3>Margin</h3>
+        <div class="container-fluid">
+          <p>Use the below classes to get desired margin.</p>
+          <br/>
+          <div class="color-black btn-outline no-margin">
+            <h3 class="special">.no-margin </h3> Lorem ipsum dolor sit amet, ubique quodsi denique pri eu, error
+            imperdiet an eum. Ei mea iuvaret dissentiunt. Pro et facete pertinacia. An everti tritani pro
+          </div>
+          <div class="color-black btn-outline margin-min ">
+            <h3 class="special ">.margin-min </h3> Lorem ipsum dolor sit amet, ubique quodsi denique pri eu, error
+            imperdiet an eum. Ei mea iuvaret dissentiunt. Pro et facete pertinacia. An everti tritani pro
+          </div>
+          <div class="color-black btn-outline margin">
+            <h3 class="special">.margin </h3> Lorem ipsum dolor sit amet, ubique quodsi denique pri eu, error imperdiet
+            an eum. Ei mea iuvaret dissentiunt. Pro et facete pertinacia. An everti tritani pro
+          </div>
+          <div class="color-black btn-outline margin-max ">
+            <h3 class="special">.margin-max </h3> Lorem ipsum dolor sit amet, ubique quodsi denique pri eu, error
+            imperdiet an eum. Ei mea iuvaret dissentiunt. Pro et facete pertinacia. An everti tritani pro
+          </div>
+        </div>
+        <br/>
+        <h3>Selective Bordering</h3>
+        <div class="container-fluid">
+          <p>Use the below classes to get desired Bordering.</p>
+          <br/>
+          <div class="color-black bdr-size-max margin bdr-top">
+            <h3 class="special">.bdr-top </h3> Lorem ipsum dolor sit amet, ubique quodsi denique pri eu, error imperdiet
+            an eum. Ei mea iuvaret dissentiunt. Pro et facete pertinacia. An everti tritani pro
+          </div>
+          <div class="color-black bdr-size-max margin bdr-bottom">
+            <h3 class="special">.bdr-bottom </h3> Lorem ipsum dolor sit amet, ubique quodsi denique pri eu, error
+            imperdiet an eum. Ei mea iuvaret dissentiunt. Pro et facete pertinacia. An everti tritani pro
+          </div>
+          <div class="color-black bdr-size-max margin bdr-left">
+            <h3 class="special">.bdr-left </h3> Lorem ipsum dolor sit amet, ubique quodsi denique pri eu, error
+            imperdiet an eum. Ei mea iuvaret dissentiunt. Pro et facete pertinacia. An everti tritani pro
+          </div>
+          <div class="color-black btn-outline margin bdr-size-min">
+            <h3 class="special">.bdr-size-min </h3> Lorem ipsum dolor sit amet, ubique quodsi denique pri eu, error
+            imperdiet an eum. Ei mea iuvaret dissentiunt. Pro et facete pertinacia. An everti tritani pro
+          </div>
+          <div class="color-black  btn-outline bdr-size-max ">
+            <h3 class="special">.bdr-size-max </h3> Lorem ipsum dolor sit amet, ubique quodsi denique pri eu, error
+            imperdiet an eum. Ei mea iuvaret dissentiunt. Pro et facete pertinacia. An everti tritani pro
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+</div>
+
+<script src="../dist/fulfil-ui.js"></script>
+<script src="https://cdn.fulfil.io/assets/mdb/4.3.1/js/jquery-3.1.1.min.js"></script>
+<script src="https://cdn.fulfil.io/assets/mdb/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.fulfil.io/assets/mdb/4.3.1/js/mdb.min.js"></script>
+</body>
+
+</html>
