@@ -1,0 +1,41 @@
+@import "partials/_variables"
+@import "partials/_theme"
+@import "partials/_helper"
+
+.navbar
+  background-color: $color-primary-0
+  color: white
+  position: fixed
+  width: 100vw
+  padding: 1em
+
+.navbar-toggle
+  float: left !important
+  border-color: transparent !important
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover
+  color: $color-secondary-1-0
+  background-color: $color-primary-0
+
+.navbar-default .navbar-nav>li>a
+  color: white
+  font-size: 1.3em
+  font-family: $special-font
+  border-bottom: 2px solid transparent
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover
+  color: $color-secondary-1-1
+  transition-duration: 0.20s
+  transition-timing-function: ease-out
+  border-bottom: 2px solid $color-secondary-1-1
+
+.hero
+  padding-top: 25vh
+
+.typing
+  white-space: nowrap
+  overflow: hidden
+  border-right: .1em solid black
+  -webkit-animation: typing 3s steps(30, end), blink-caret 1s step-end infinite
+  -moz-animation: typing 3s steps(30, end), blink-caret 1s step-end infinite
+
